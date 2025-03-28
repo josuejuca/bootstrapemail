@@ -1,0 +1,19 @@
+<body class="bg-light">
+  <div class="container">
+    <img class="ax-center my-10 w-40" src="{{ logo }}" />
+    <div class="card p-6 p-lg-10 space-y-4">
+      <h1 class="h4 fw-700">
+        Olá, {{ nome }}!
+      </h1>
+      <p>
+Clique no link abaixo para redefinir sua senha:
+      </p>
+      <a class="btn btn-primary p-3 fw-600" href="https://auth.josuejuca.com/{{token}}">Redefinir Senha</a>
+    </div>
+    <img class="ax-center mt-10 w-40" src="https://assets-juca.netlify.app/img/juca/juca-black.png" />
+    <div class="text-muted text-center my-6" style="font-size: 15px" >
+      Essa mensagem foi enviada para {{ email }}. <br>
+        Para ajudar a manter sua conta segura, não encaminhe este email. 
+    </div>
+  </div>
+</body>
