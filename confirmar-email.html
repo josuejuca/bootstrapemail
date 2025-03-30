@@ -1,19 +1,21 @@
 <body class="bg-light">
   <div class="container">
-    <img class="ax-center my-10 w-40" src="{{ logo }}" />
+    <img class="ax-center my-10 w-40" src="{{ logo_url }}" alt="Logo {{ site_name }}" />
     <div class="card p-6 p-lg-10 space-y-4">
       <h1 class="h4 fw-700">
-        Bem-vindo, {{ nome }}!
+        Bem-vindo, {{ user_name }}!
       </h1>
       <p>
-Para que possamos confirmar sua identidade, confirme o seu endereço de e-mail.
+Obrigado por se registrar na {{ site_name }}. Por favor, clique no botão abaixo para verificar seu e-mail:
       </p>
-      <a class="btn btn-primary p-3 fw-600" href="https://auth.josuejuca.com/{{token}}">Confirmar E-mail</a>
+      <a class="btn btn-dark p-3 fw-600" href="{{ verification_link }}">Verificar E-mail</a>
+      <p>Se o botão não funcionar, copie e cole este link no seu navegador:</p>
+      <p><small>{{ verification_link }}</small></p>
     </div>
     <img class="ax-center mt-10 w-40" src="https://assets-juca.netlify.app/img/juca/juca-black.png" />
     <div class="text-muted text-center my-6" style="font-size: 15px" >
       Essa mensagem foi enviada para {{ email }}. <br>
-        Para ajudar a manter sua conta segura, não encaminhe este email. 
+        Para ajudar a manter sua conta segura, não encaminhe este email. <br> Equipe Imogo - Este é um e-mail automático
     </div>
   </div>
 </body>
